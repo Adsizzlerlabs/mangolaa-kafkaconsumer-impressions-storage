@@ -1,8 +1,8 @@
 package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.domain
 
 import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.request.ImpressionRequest
+import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.Assert
 import groovy.transform.ToString
-import org.springframework.util.Assert
 
 import java.time.ZonedDateTime
 

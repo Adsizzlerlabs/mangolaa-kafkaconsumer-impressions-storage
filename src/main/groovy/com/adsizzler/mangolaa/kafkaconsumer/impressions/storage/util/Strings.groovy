@@ -1,4 +1,4 @@
-package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.util
+package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util
 /**
  * Created by Ankush on 17/07/17.
  */

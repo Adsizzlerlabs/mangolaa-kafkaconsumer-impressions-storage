@@ -1,7 +1,6 @@
 package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.config
 
-import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.util.EnvironmentUtil
-
+import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.EnvironmentUtil
 import io.vertx.core.Vertx
 import io.vertx.kafka.client.consumer.KafkaConsumer
 import org.apache.kafka.clients.consumer.ConsumerConfig

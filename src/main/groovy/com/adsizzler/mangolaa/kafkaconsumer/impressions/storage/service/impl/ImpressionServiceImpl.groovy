@@ -3,7 +3,7 @@ package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.service.impl
 import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.domain.Impression
 import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.repository.ImpressionRepository
 import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.service.ImpressionService
-import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.util.Assert
+import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.Assert
 import groovy.util.logging.Slf4j
 import io.vertx.core.Future
 import org.springframework.stereotype.Service

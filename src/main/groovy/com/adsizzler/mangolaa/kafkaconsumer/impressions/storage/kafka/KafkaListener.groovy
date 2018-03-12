@@ -5,8 +5,8 @@ import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.constants.KafkaT
 import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.domain.Impression
 import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.request.ImpressionRequest
 import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.service.ImpressionService
-import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.util.Gzip
-import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.util.Json
+import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.Gzip
+import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.Json
 import groovy.util.logging.Slf4j
 import io.vertx.kafka.client.consumer.KafkaConsumer
 import org.springframework.stereotype.Component

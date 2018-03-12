@@ -1,9 +1,11 @@
-package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.util;
+package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.zip.GZIPInputStream;
-import java.util.zip.GZIPOutputStream;
 
 /**
  * Created by Ankush on 16/02/17.

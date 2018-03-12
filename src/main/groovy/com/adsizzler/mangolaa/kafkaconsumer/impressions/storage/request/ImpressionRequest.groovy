@@ -5,7 +5,6 @@ import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.jackson.ZonedDat
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
-import com.fasterxml.jackson.databind.annotation.JsonSerialize
 
 import java.time.ZonedDateTime
 
@@ -71,6 +70,4 @@ class ImpressionRequest {
 
     @JsonProperty(value = 'lossCode')
     final Integer lossCode
-
-
 }

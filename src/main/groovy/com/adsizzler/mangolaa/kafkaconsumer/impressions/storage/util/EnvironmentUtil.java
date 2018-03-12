@@ -1,4 +1,4 @@
-package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.util;
+package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;

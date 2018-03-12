@@ -1,9 +1,8 @@
 package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.repository.impl
 
-import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.annotation.TestingOnly
 import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.domain.Impression
 import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.repository.ImpressionRepository
-import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.util.Assert
+import com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.Assert
 import com.datastax.driver.core.ResultSet
 import com.datastax.driver.core.querybuilder.QueryBuilder
 import com.google.common.util.concurrent.FutureCallback
@@ -15,7 +14,6 @@ import org.springframework.cassandra.core.CqlTemplate
 import org.springframework.stereotype.Repository
 
 import javax.annotation.PreDestroy
-import java.time.ZonedDateTime
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -34,8 +32,8 @@ class CassandraImpressionRepositoryImpl implements ImpressionRepository {
 
     CassandraImpressionRepositoryImpl(
             CqlTemplate cqlTemplate,
-            @Value("\$impressions.cassandra.keyspace") String keyspace,
-            @Value("\$impressions.cassandra.table") String table
+            @Value("\${impressions.cassandra.keyspace}") String keyspace,
+            @Value("\${impressions.cassandra.table}") String table
     )
     {
         this.cqlTemplate = cqlTemplate
@@ -54,10 +52,12 @@ class CassandraImpressionRepositoryImpl implements ImpressionRepository {
         Assert.notNull(impression, 'impression cannot be null')
         def future = Future.future()
 
+        def cassandraTimestamp  = Date.from(impression.timestamp.toInstant())
+
         def insertStatement = QueryBuilder
                                 .insertInto(keyspace, table)
                                     .value('uuid', impression.uuid)
-                                    .value('timestamp', impression.timestamp)
+                                    .value('timestamp', cassandraTimestamp)
                                     .value('ortb_ver', impression.openRtbVer)
                                     .value('cr_id', impression.creativeId)
                                     .value('camp_id', impression.campaignId)

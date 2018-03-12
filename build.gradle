@@ -58,7 +58,7 @@ springBoot {
 
 dependencies {
 
-	compile group: 'com.google.guava', name: 'guava', version: '23.6-jre'
+//	compile group: 'com.google.guava', name: 'guava', version: '23.6-jre'
 
 	//Spring Boot
 	compile('org.springframework.boot:spring-boot-starter')

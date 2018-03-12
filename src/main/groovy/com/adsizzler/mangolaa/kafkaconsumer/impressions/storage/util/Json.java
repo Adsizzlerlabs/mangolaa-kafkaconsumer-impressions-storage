@@ -1,4 +1,4 @@
-package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util.util;
+package com.adsizzler.mangolaa.kafkaconsumer.impressions.storage.util;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;
