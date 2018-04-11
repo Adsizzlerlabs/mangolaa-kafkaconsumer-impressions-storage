@@ -25,6 +25,9 @@ class ImpressionRequest {
     @JsonProperty(value = 'openRtbVer', required = true)
     final String openRtbVer
 
+    @JsonProperty(value = "userId", required = true)
+    final String userId
+
     @JsonProperty(value = 'advId', required = true)
     final Integer advId
 

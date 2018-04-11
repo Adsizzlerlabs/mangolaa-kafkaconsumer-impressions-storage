@@ -64,6 +64,7 @@ class CassandraImpressionRepositoryImpl implements ImpressionRepository {
                                     .value('src_id', impression.srcId)
                                     .value('adv_id', impression.advId)
                                     .value('cl_id', impression.clientId)
+                                    .value('user_id', impression.userId)
                                     .value('bid_req_id', impression.bidReqId)
                                     .value('bid_resp_id', impression.bidRespUuid)
                                     .value('imp_id', impression.impId)

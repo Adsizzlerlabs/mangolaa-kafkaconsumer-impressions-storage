@@ -21,6 +21,7 @@ class Impression {
     final Integer srcId
     final Integer clientId
     final String bidReqId
+    final String userId
     final UUID bidRespUuid
     final String impId
     final String seatId
@@ -39,6 +40,7 @@ class Impression {
         this.creativeId = req.creativeId
         this.advId = req.advId
         this.srcId = req.sourceId
+        this.userId = req.userId
         this.bidReqId = req.bidReqId
         this.bidRespUuid = req.bidRespUuid
         this.clientId = req.clientId
